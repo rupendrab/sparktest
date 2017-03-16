@@ -40,3 +40,8 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
    \i scalacode/sparktest/sql/ddl.sql
    \d word_counts*
    ```
+ 3. Start Kafka
+    ```
+    ./kafka_util/start_kafka.sh 
+    tail -f /data/logs/kafka_server.log
+    ```
