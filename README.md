@@ -93,7 +93,7 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
      The publisher publishes each line in this format:
      filename: line
   9. From another terminal, copy a few of the files to /data/books/streaming. These files should be published and moved to /data/books/streaming/done
-  10. Start the Spark Streaming Code
+  10. Start the Spark Streaming Code  
      ```
      cd scalacode/sparktest
      
