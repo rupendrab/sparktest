@@ -36,6 +36,27 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
    pg_ctl start
    psql -c "create database rupen"
    exit
-   psql -d rupen -U postgres   
+   psql -d rupen -U postgres
+   \i scalacode/sparktest/sql/ddl.sql
+   \d word_counts*
+   
+   \d word_counts*
+         Table "public.word_counts"
+ Column |          Type          | Modifiers 
+--------+------------------------+-----------
+ word   | character varying(100) | not null
+ cnt    | integer                | 
+Indexes:
+    "pk_word_counts" PRIMARY KEY, btree (word)
+
+     Table "public.word_counts_by_file"
+ Column |          Type          | Modifiers 
+--------+------------------------+-----------
+ fname  | character varying(100) | not null
+ word   | character varying(100) | not null
+ cnt    | integer                | 
+Indexes:
+    "pk_word_counts_by_file" PRIMARY KEY, btree (fname, word)
+
    ```
     
