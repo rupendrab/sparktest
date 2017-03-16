@@ -77,3 +77,17 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
     ## All the books will be downloaded to the /data/books directory. The Python code uses the BeautifulSoup module to parse
     the HTML to text
     ```
+  7. Create the directories that would be used for streaming
+     ```
+     mkdir -p /data/books/streaming  ## Files placed in this directory will be published to Kafka by the Python daemon
+     mkdir -p /data/books/streaming/staging ## Staging directory during Kafka publish
+     mkdir -p /data/books/streaming/done ## Files published will ne moved here
+     ```
+  8. Start the python publisher daemon (may be started using nohup and &)
+     ```
+     ./pythoncode/run_publish_files.sh
+     ```
+     The publisher publishes each line in this format:
+     filename: line
+  9. From another terminal, copy a few of the files to /data/books/streaming. These files should be published and moved to /data/books/streaming/done
+  
