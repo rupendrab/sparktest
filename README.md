@@ -71,4 +71,9 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
     ```
  6. Download all of the Shakespeare literature as separate books from http://shakespeare.mit.edu/. We will use these for our testing
     ```
+    mkdir -p /data/books
+    ./pythoncode/get_shakespeare_books.py ./pythoncode/links.txt /data/books
+    
+    ## All the books will be downloaded to the /data/books directory. The Python code uses the BeautifulSoup module to parse
+    the HTML to text
     ```
