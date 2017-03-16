@@ -64,3 +64,11 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
     ## Terminate the producer and consumer
     
     ```
+ 5. Now create a topic named books
+    ```
+    ./kafka_util/create_topic.sh books
+    ./kafka_util/list_topics.sh
+    ```
+ 6. Download all of the Shakespeare literature as separate books from http://shakespeare.mit.edu/. We will use these for our testing
+    ```
+    ```
