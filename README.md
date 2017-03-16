@@ -27,5 +27,15 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
   3. Spark version 2.1.0-bin-hadoop2.6
   4. PostgreSQL version 9.6.2
   
-  
+#### Details:
+
+1. cd to the codebase directory
+2. Start PostgreSQL and create the tables and data load functions  
+   ```
+   su - postgres
+   pg_ctl start
+   psql -c "create database rupen"
+   exit
+   psql -d rupen -U postgres   
+   ```
     
