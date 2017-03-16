@@ -45,3 +45,10 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
     ./kafka_util/start_kafka.sh 
     tail -f /data/logs/kafka_server.log
     ```
+ 4. Check Kafka is working properly
+    ```
+    # Create a topic
+    ./kafka_util/create_topic.sh hello-kafka
+    # List topics
+    ./kafka_util/list_topics.sh
+    ```
