@@ -49,6 +49,18 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
     ```
     # Create a topic
     ./kafka_util/create_topic.sh hello-kafka
+    
     # List topics
     ./kafka_util/list_topics.sh
+    
+    # Start a console producer on this topic
+    ./kafka_util/start_console_producer.sh hello-kafka
+    
+    # In another terminal, start a console consumer on the topic
+    ./kafka_util/start_console_consumer.sh hello-kafka
+    
+    ## Type something on the producer console and press enter, the same text should appear in the consumer console
+    
+    ## Terminate the producer and consumer
+    
     ```
