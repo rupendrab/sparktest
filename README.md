@@ -11,4 +11,8 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
   3. Run Spark Streaming to read from the Kafka topic and create two aggregations:  
         1. Cumulative word count  
         2. Cumulative word count by document name  
+  4. In Spark, create the incremental accumulation sets
+  5. Update a PostgreSQL database with the incremental data, so the database is always in sync with the aggregates
+  
+  
     
