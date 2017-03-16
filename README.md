@@ -18,9 +18,9 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
   1. Linux CentOS release 6.8 (Final)
   
 #### Software and versions:
-  1. Python version 2.7.13 with pykafka 2.5.0 and beautifulsoup4 4.5.3
-      pip install pykafka
-      pip install beautifulsoup4
+  1. Python version 2.7.13 with pykafka 2.5.0 and beautifulsoup4 4.5.3  
+      pip install pykafka  
+      pip install beautifulsoup4  
   2. Kafka version 2.11-0.10.1.1
   3. Spark version 2.1.0-bin-hadoop2.6
   4. PostgreSQL version 9.6.2
