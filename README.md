@@ -24,8 +24,11 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
       pip install beautifulsoup4
       ```  
   2. Kafka version 2.11-0.10.1.1
-  3. Spark version 2.1.0-bin-hadoop2.6
-  4. PostgreSQL version 9.6.2
+  3. Zookeeper version 3.4.5-cdh5.10.0--1
+  4. Java version 1.8.0_121
+  5. sbt [Scala Build Tool] version 0.13.13
+  4. Spark version 2.1.0-bin-hadoop2.6
+  5. PostgreSQL version 9.6.2
   
 #### Details:
 
