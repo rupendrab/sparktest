@@ -32,7 +32,8 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
   
 #### Details:
 
-1. cd to the codebase directory
+1. cd to the codebase directory. You will have to change SPARK_HOME and KAFKA_HOME in the shell scripts before running them.
+
 2. Start PostgreSQL and create the tables and data load functions  
    ```
    su - postgres
