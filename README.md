@@ -92,7 +92,9 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
      ```
      The publisher publishes each line in this format:
      filename: line
+  
   9. From another terminal, copy a few of the files to /data/books/streaming. These files should be published and moved to /data/books/streaming/done  
+  
   10. Start the Spark Streaming Code  
       ```
       cd scalacode/sparktest
@@ -102,4 +104,9 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
      
       ## Start the spark streaming program
       ./run-spark-assembly.sh example.KafkaWordCountIncrementalToDBv2 localhost:9092 grp1 books 1
+      
+      ## Drop files to /data/books/streaming
+      ## Connect to PostgreSQL and check the tables word_counts and word_counts_by_file
       ```
+  11. Stop Spark Streaming, Kafka Server and PostgreSQL 
+  
