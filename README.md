@@ -14,6 +14,9 @@ Create and update multiple aggregates in Spark from Streaming data created by ne
   4. In Spark, create the incremental accumulation sets
   5. Update a PostgreSQL database with the incremental data, so the database is always in sync with the aggregates
   
+#### OS:
+  1. Linux CentOS release 6.8 (Final)
+  
 #### Software and versions:
   1. Python version 2.7.13 with pykafka 2.5.0 and beautifulsoup4 4.5.3
       pip install pykafka
