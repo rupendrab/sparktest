@@ -1,0 +1,8 @@
+*.log
+**/metastore_db/
+**/tmp/
+*.pyc
+**/target/
+**/target/*
+target
+**/.checkpoint*
